@@ -1,4 +1,6 @@
 from django.contrib import admin
-from .models import Post
+from .models import PostEn, PostEs, PostPt
 
-admin.site.register(Post)
+admin.site.register(PostEn)
+admin.site.register(PostEs)
+admin.site.register(PostPt)
