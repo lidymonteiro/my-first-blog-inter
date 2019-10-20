@@ -14,8 +14,8 @@ class Post(models.Model):
 
     class Meta:
         abstract = True
-        verbose_name = _('Artigo')
-        verbose_name_plural = _('Artigos')
+        verbose_name = _('Post')
+        verbose_name_plural = _('Posts')
 
 
     def publish(self):
@@ -29,8 +29,8 @@ class PostEn(Post):
     language = models.CharField(_('idioma'), max_length=2, default='en')
 
     class Meta:
-        verbose_name = _('Artigo EN')
-        verbose_name_plural = _('Artigos EN')
+        verbose_name = _('Post EN')
+        verbose_name_plural = _('Posts EN')
 
     def __str__(self):
         return self.title
@@ -39,22 +39,22 @@ class PostEs(Post):
     language = models.CharField(_('idioma'), max_length=2, default='es')
 
     class Meta:
-        verbose_name = _('Artigo ES')
-        verbose_name_plural = _('Artigos ES')
+        verbose_name = _('Post ES')
+        verbose_name_plural = _('Posts ES')
 
     def __str__(self):
         return self.title
 
 class PostPt(Post):
     language = models.CharField(_('idioma'), max_length=2, default='pt-br')
-    post_en = models.OneToOneField(PostEn, verbose_name=_('Artigo em Inglês'), on_delete=models.SET_NULL,
+    post_en = models.OneToOneField(PostEn, verbose_name=_('Post em Inglês'), on_delete=models.SET_NULL,
                                       null=True, blank=True, related_name='post_pt_en')
-    post_es = models.OneToOneField(PostEs, verbose_name=_('Artigo em Espanhol'), on_delete=models.SET_NULL,
+    post_es = models.OneToOneField(PostEs, verbose_name=_('Post em Espanhol'), on_delete=models.SET_NULL,
                                       null=True, blank=True, related_name='post_pt_es')
 
     class Meta:
-        verbose_name = _('Artigo PT')
-        verbose_name_plural = _('Artigos PT')
+        verbose_name = _('Post PT')
+        verbose_name_plural = _('Posts PT')
 
     def __str__(self):
         return self.title
