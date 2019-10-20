@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-20 19:32-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\blog\models.py:10
+msgid "título"
+msgstr "title"
+
+#: .\blog\models.py:11
+msgid "texto"
+msgstr "text"
+
+#: .\blog\models.py:12
+msgid "criado em"
+msgstr "created in"
+
+#: .\blog\models.py:13
+msgid "publicar em"
+msgstr "publish in"
+
+#: .\blog\models.py:17
+msgid "Post"
+msgstr ""
+
+#: .\blog\models.py:18
+msgid "Posts"
+msgstr ""
+
+#: .\blog\models.py:29 .\blog\models.py:39 .\blog\models.py:49
+msgid "idioma"
+msgstr "language"
+
+#: .\blog\models.py:32
+msgid "Post EN"
+msgstr ""
+
+#: .\blog\models.py:33
+msgid "Posts EN"
+msgstr ""
+
+#: .\blog\models.py:42
+msgid "Post ES"
+msgstr ""
+
+#: .\blog\models.py:43
+msgid "Posts ES"
+msgstr ""
+
+#: .\blog\models.py:50
+msgid "Post em Inglês"
+msgstr "Post in English"
+
+#: .\blog\models.py:52
+msgid "Post em Espanhol"
+msgstr "Post in Spanish"
+
+#: .\blog\models.py:56
+msgid "Post PT"
+msgstr ""
+
+#: .\blog\models.py:57
+msgid "Posts PT"
+msgstr ""
