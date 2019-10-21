@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-20 19:32-0300\n"
+"POT-Creation-Date: 2019-10-21 09:56-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,62 +18,80 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\blog\models.py:10
+#: blog/models.py:10
 msgid "título"
 msgstr ""
 
-#: .\blog\models.py:11
+#: blog/models.py:11
 msgid "texto"
 msgstr ""
 
-#: .\blog\models.py:12
+#: blog/models.py:12
 msgid "criado em"
 msgstr "creado en"
 
-#: .\blog\models.py:13
+#: blog/models.py:13
 msgid "publicar em"
 msgstr "publicar en"
 
-#: .\blog\models.py:17
+#: blog/models.py:17
 msgid "Post"
 msgstr ""
 
-#: .\blog\models.py:18
+#: blog/models.py:18
 msgid "Posts"
 msgstr ""
 
-#: .\blog\models.py:29 .\blog\models.py:39 .\blog\models.py:49
+#: blog/models.py:29 blog/models.py:39 blog/models.py:49
 msgid "idioma"
 msgstr ""
 
-#: .\blog\models.py:32
+#: blog/models.py:32
 msgid "Post EN"
 msgstr ""
 
-#: .\blog\models.py:33
+#: blog/models.py:33
 msgid "Posts EN"
 msgstr ""
 
-#: .\blog\models.py:42
+#: blog/models.py:42
 msgid "Post ES"
 msgstr ""
 
-#: .\blog\models.py:43
+#: blog/models.py:43
 msgid "Posts ES"
 msgstr ""
 
-#: .\blog\models.py:50
+#: blog/models.py:50
 msgid "Post em Inglês"
 msgstr "publicar en Inglés"
 
-#: .\blog\models.py:52
+#: blog/models.py:52
 msgid "Post em Espanhol"
 msgstr "publicar en Español"
 
-#: .\blog\models.py:56
+#: blog/models.py:56
 msgid "Post PT"
 msgstr ""
 
-#: .\blog\models.py:57
+#: blog/models.py:57
 msgid "Posts PT"
+msgstr ""
+
+#: blog/templates/blog/base.html:17
+msgid "Hello"
+msgstr ""
+
+#: blog/templates/blog/base.html:17
+msgid "Log out"
+msgstr ""
+
+#: blog/templates/blog/base.html:21
+msgid "Django Girls Blog"
+msgstr ""
+
+#: blog/templates/blog/post_detail.html:20
+#: blog/templates/blog/post_detail.html:36
+#: blog/templates/blog/post_detail.html:52
+msgid "Disponível em:"
 msgstr ""
