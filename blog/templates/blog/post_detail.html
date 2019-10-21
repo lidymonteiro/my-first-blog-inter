@@ -47,7 +47,7 @@
                 {% endif %}
                 </p>
             {% endif %}
-        {% elif article.language == 'en' %}
+        {% elif post.language == 'en' %}
             {% if post.post_pt_en or post.post_pt_en.post_es %}
                 <p class="translation">{% trans 'Disponível em:' %}
                 {% if post.post_pt_en %}
