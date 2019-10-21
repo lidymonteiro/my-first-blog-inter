@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 09:56-0300\n"
+"POT-Creation-Date: 2019-10-21 12:25-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,16 +78,20 @@ msgstr ""
 msgid "Posts PT"
 msgstr ""
 
-#: blog/templates/blog/base.html:17
-msgid "Hello"
+#: blog/templates/blog/base.html:18
+msgid "Oie,"
 msgstr ""
 
-#: blog/templates/blog/base.html:17
-msgid "Log out"
+#: blog/templates/blog/base.html:18
+msgid "Sair"
 msgstr ""
 
-#: blog/templates/blog/base.html:21
+#: blog/templates/blog/base.html:24
 msgid "Django Girls Blog"
+msgstr ""
+
+#: blog/templates/blog/base.html:31
+msgid "Language"
 msgstr ""
 
 #: blog/templates/blog/post_detail.html:20
