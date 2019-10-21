@@ -1,12 +1,23 @@
 {% extends 'blog/base.html' %}
 
+{% load i18n %}
+
 {% block content %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
                 {{ post.published_date }}
             </div>
-            <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+            <h2>
+            
+            {% if post.language == 'pt-br' %}
+                <a href="{% url 'post_detail_pt' pk=post.pk %}">{{ post.title }}</a>
+            {% elif post.language == 'en' %}
+                <a href="{% url 'post_detail_en' pk=post.pk %}">{{ post.title }}</a>
+            {% elif post.language == 'es' %}
+                <a href="{% url 'post_detail_es' pk=post.pk %}">{{ post.title }}</a>
+            {% endif %}
+            </h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}

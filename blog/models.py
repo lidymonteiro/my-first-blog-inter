@@ -46,7 +46,7 @@ class PostEs(Post):
         return self.title
 
 class PostPt(Post):
-    language = models.CharField(_('idioma'), max_length=2, default='pt-br')
+    language = models.CharField(_('idioma'), max_length=5, default='pt-br')
     post_en = models.OneToOneField(PostEn, verbose_name=_('Post em Inglês'), on_delete=models.SET_NULL,
                                       null=True, blank=True, related_name='post_pt_en')
     post_es = models.OneToOneField(PostEs, verbose_name=_('Post em Espanhol'), on_delete=models.SET_NULL,
