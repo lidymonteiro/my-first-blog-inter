@@ -1,5 +1,6 @@
 {% load static %}
 {% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
 
 <html>
     <head>
@@ -18,8 +19,30 @@
             {% else %}
                 <a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
             {% endif %}
-            <h1><a href="/">{% trans 'Django Girls Blog' %}</a></h1>
+            <h1>
+                {% if LANGUAGE_CODE == 'pt-br' %}<a href="/">{% else %}<a href="/{{ LANGUAGE_CODE }}/">{% endif %}
+                {% trans 'Django Girls Blog' %}</a>
+            </h1>
+
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+            <div class="languages">
+                <p>{% trans "Language" %}:</p>
+                <ul class="languages">
+                    {% for language in languages %}
+                    <li>
+                        <a href="/{{ language.code }}/"{% if language.code == LANGUAGE_CODE %} class="selected"{% endif %}>
+                            {{ language.name_local }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul> 
+            </div>
+
+
         </div>
+        
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
