@@ -3,6 +3,11 @@ h1 a, h2 a {
     font-family: 'Lobster';
 }
 
+a{
+    text-decoration: none;
+    color: #000;
+}
+
 .page-header {
     background-color: #C25100;
     margin-top: 0;
@@ -48,4 +53,33 @@ h1, h2, h3, h4 {
 
 .post h2 a, .post h2 a:visited {
     color: #000000;
+}
+
+.languages{
+    height: 100px;
+}
+
+.languages p{
+    font-size: 16px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.languages ul{
+    list-style: none;
+    margin-left: -45px;
+}
+
+.languages ul li{
+   display: inline;
+   float: left; 
+   text-decoration: none;
+   margin-left: 5px;
+}
+
+.languages li{
+    padding: 10px;
+    background:#fff;
+    margin: 10px;
+    border-radius: 3px;
 }
